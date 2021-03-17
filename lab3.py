@@ -2,6 +2,23 @@ import random
 # zad 1
 # zdefiniuj zbiory w python comprehension
 
+# A = {1-x: x ∈ <1,10>}
+# B = {1,4,16,…,4**7}
+# C = {x: x∈B i x jest liczbą podzielną przez 2}
+
+# A)
+# lista_a = [x-1 for x in range(1, 11)]
+# print(lista_a)
+
+# B)
+# czworka = 4
+# lista_b = [4**x for x in range(0, 8)]
+# print(lista_b)
+#
+# # C)
+# lista_c = [x for x in lista_b if x % 2 == 0]
+# print(lista_c)
+
 
 #zad 2
 # Wygeneruj losowo 10 elementów, zapisz je do listy1, 
@@ -70,33 +87,37 @@ import random
 # Parametry funkcji a1 (wartość początkowa), b (wielkość o ile mnożone są kolejne elementy), 
 # ile (ile elementów ma mnożyć)
 # Ponadto funkcja niech przyjmuje wartości domyślne: a = 1, b = 4, ile = 10
+# def ciag(a = 1, b = 4, ile = 10):
+#     i = 0
+#     suma = 1
+#     for i in range(i, ile):
+#         mnozenie = a * b
+#         suma *= mnozenie
+#     return suma
+#
+# print(ciag())
+
+
 
 # zad 8
 # Napisz funkcję, która wykorzystuje symbol **. Funkcja ma przyjmować listę zakupów w postaci:
 # klucz to nazwa produktu a wartość to jego koszt.
 # Funkcja ma zliczyć ile jest wszystkich produktów w ogóle i zwracać całościową wartość tych produktów.
 
-produkty = {
-    "mleko": 2.99,
-    "chleb": 2.50,
-    "sok jabłkowy": 3.50,
-    "kasza": 4.20,
-    "żel pod prysznic": 9.99
-}
-# def lista_zakupow(**produkty):
+# produkty = {
+#     "mleko": 2.99,
+#     "chleb": 2.50,
+#     "sok jabłkowy": 3.50,
+#     "kasza": 4.20,
+#     "żel pod prysznic": 9.99
+# }
+# #
+# def lista_zakupow(**lista_zakupow):
 #     ilosc = len(produkty)
-#     cena = 0
-#     for key, value in produkty.items():
-#         cena += int(value)
-#     print("Ilość produktów:", ilosc)
-#     print("Cena produktów łącznie:", cena,"PLN")
-
-def lista_zakupow(**lista_zakupow):
-    ilosc = len(produkty)
-    sum_cena = sum(produkty.values())
+#     sum_cena = sum(produkty.values())
     
-    print("Ilość produktów:", ilosc)
-    print("Cena produktów łacznie:", sum_cena,"PLN")
+#     print("Ilość produktów:", ilosc)
+#     print("Cena produktów łacznie:", sum_cena,"PLN")
 
-lista_zakupow()
+# lista_zakupow()
         
